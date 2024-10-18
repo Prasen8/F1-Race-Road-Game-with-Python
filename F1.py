@@ -1,3 +1,4 @@
+#Prasen8_Github
 import pygame
 import time
 import random
@@ -27,11 +28,11 @@ game_layout_display= pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('F1 Race Road Game')
 time_clock=pygame.time.Clock()
 
-car_photo = pygame.image.load('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/images/car.png')
-left_c = pygame.image.load('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/images/car_left.png')
-right_c = pygame.image.load('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/images/car_right.png')
-photo_obstacle = pygame.image.load('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/images/obstacle.png')
-texture_photo = pygame.image.load('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/images/texture.png')
+car_photo = pygame.image.load('Path of car.png')
+left_c = pygame.image.load('Path of car_left.png')
+right_c = pygame.image.load('Path of car_right.png')
+photo_obstacle = pygame.image.load('Path of obstacle.png')
+texture_photo = pygame.image.load('Path of texture.png')
 (c_width, c_height) = car_photo.get_rect().size
 (c_left_width, c_left_height) = left_c.get_rect().size
 (c_right_width, c_right_height) = right_c.get_rect().size
@@ -41,15 +42,15 @@ texture_photo = pygame.image.load('C:/Users/Prasen/OneDrive/Desktop/Game.python/
 icon = pygame.image.load('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/images/logo.png')
 pygame.display.set_icon(icon)
 
-image_background = pygame.image.load('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/images/background.png')
-image_background_still = pygame.image.load('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/images/background_inv.png')
+image_background = pygame.image.load('Path of background.png')
+image_background_still = pygame.image.load('Path of background_inv.png')
 bckgrndRect = image_background.get_rect()
 
-welcome_1 = pygame.mixer.Sound('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/audio/intro1.wav')
-welcome_2 = pygame.mixer.Sound('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/audio/intro2.wav')
-audio_crash = pygame.mixer.Sound('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/audio/car_crash.wav')
-audio_ignition = pygame.mixer.Sound('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/audio/ignition.wav')
-pygame.mixer.music.load('C:/Users/Prasen/OneDrive/Desktop/Game.python/F1 Car Racing/audio/running.wav')
+welcome_1 = pygame.mixer.Sound('Path of intro1.wav')
+welcome_2 = pygame.mixer.Sound('Path of intro2.wav')
+audio_crash = pygame.mixer.Sound('Path of car_crash.wav')
+audio_ignition = pygame.mixer.Sound('Path of ignition.wav')
+pygame.mixer.music.load('Path of running.wav')
 
 def things_dodged(counting, highest_score, everything_speed):
 	fnt = pygame.font.SysFont(None, 25)
